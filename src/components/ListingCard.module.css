@@ -29,21 +29,6 @@
   display: block;
 }
 
-.verifiedBadge {
-  position: absolute;
-  top: var(--space-1);
-  left: var(--space-1);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 3px 8px;
-  border-radius: var(--radius-full);
-  background: var(--color-surface);
-  color: var(--color-verified-green);
-  font-size: 10px;
-  font-weight: 700;
-}
-
 .ratingBadge {
   position: absolute;
   top: var(--space-1);

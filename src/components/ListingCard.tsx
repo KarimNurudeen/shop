@@ -1,6 +1,6 @@
 import type { KeyboardEvent, MouseEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaWhatsapp, FaLocationDot, FaStar, FaCircleCheck } from "react-icons/fa6";
+import { FaWhatsapp, FaLocationDot, FaStar } from "react-icons/fa6";
 import type { Listing } from "../types/listing";
 import { formatPrice } from "../lib/formatPrice";
 import { InStockBadge } from "./InStockBadge";
@@ -41,10 +41,6 @@ export function ListingCard({ listing }: ListingCardProps) {
     >
       <div className={styles.imageWrap}>
         <img src={listing.images[0]} alt={listing.title} className={styles.image} />
-        <span className={styles.verifiedBadge}>
-          <FaCircleCheck aria-hidden="true" />
-          Verified ID
-        </span>
         {listing.rating !== undefined && (
           <span className={styles.ratingBadge}>
             <FaStar aria-hidden="true" className={styles.ratingIcon} />
