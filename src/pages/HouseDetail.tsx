@@ -18,9 +18,13 @@ export function HouseDetail() {
     let cancelled = false;
     setListing(undefined);
     if (id) {
-      fetchListingById(id).then((data) => {
-        if (!cancelled) setListing(data);
-      });
+      fetchListingById(id)
+        .then((data) => {
+          if (!cancelled) setListing(data);
+        })
+        .catch(() => {
+          if (!cancelled) setListing(null);
+        });
     } else {
       setListing(null);
     }

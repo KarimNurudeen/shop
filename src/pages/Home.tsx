@@ -11,12 +11,19 @@ export function Home() {
   const [category, setCategory] = useState<ListingCategory>("house");
   const [query, setQuery] = useState("");
   const [listings, setListings] = useState<Listing[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
-    fetchListings().then((data) => {
-      if (!cancelled) setListings(data);
-    });
+    fetchListings()
+      .then((data) => {
+        if (!cancelled) setListings(data);
+      })
+      .catch((err: unknown) => {
+        if (!cancelled) {
+          setError(err instanceof Error ? err.message : "Failed to load listings.");
+        }
+      });
     return () => {
       cancelled = true;
     };
@@ -52,8 +59,9 @@ export function Home() {
       </header>
 
       <div className={styles.content}>
-        {listings === null && <div className={styles.empty}>Loading listings…</div>}
-        {listings !== null && filteredListings.length === 0 && (
+        {error && <div className={styles.empty}>{error}</div>}
+        {!error && listings === null && <div className={styles.empty}>Loading listings…</div>}
+        {!error && listings !== null && filteredListings.length === 0 && (
           <div className={styles.empty}>No listings match "{query}".</div>
         )}
         {listings !== null && filteredListings.length > 0 && (

@@ -16,9 +16,13 @@ export function OrderConfirmation() {
   useEffect(() => {
     let cancelled = false;
     if (lastOrder?.listingId) {
-      fetchListingById(lastOrder.listingId).then((data) => {
-        if (!cancelled) setListing(data);
-      });
+      fetchListingById(lastOrder.listingId)
+        .then((data) => {
+          if (!cancelled) setListing(data);
+        })
+        .catch(() => {
+          if (!cancelled) setListing(null);
+        });
     } else {
       setListing(null);
     }
