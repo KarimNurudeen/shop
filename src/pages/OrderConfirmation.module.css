@@ -1,0 +1,41 @@
+.page {
+  padding: var(--screen-padding);
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.confirmationCard {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: var(--outline-weight) solid var(--color-accent-red);
+  border-radius: var(--radius-card);
+  padding: var(--space-3);
+}
+
+.confirmationTitle {
+  font-size: var(--font-size-body);
+  font-weight: 700;
+  color: var(--color-dark-blue);
+}
+
+.confirmationSubtitle {
+  margin-top: 4px;
+  font-size: var(--font-size-label);
+  color: var(--color-text-secondary);
+}
+
+.messagePreview {
+  background: var(--color-surface);
+  border: var(--outline-weight-sm) solid var(--color-black);
+  border-radius: var(--radius-card);
+  padding: var(--space-3);
+  font-family: inherit;
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+}

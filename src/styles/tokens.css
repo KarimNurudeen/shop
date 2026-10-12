@@ -1,0 +1,55 @@
+:root {
+  /* Colors — red / blue / dark blue / black palette (see figma-handoff.md §2) */
+  --color-primary-blue: #2f6fed;
+  --color-dark-blue: #0b1e3d;
+  --color-accent-red: #a3241c;
+  --color-black: #111111;
+  --color-background: #f5f6fa;
+  --color-surface: #ffffff;
+  --color-border: #e3e5ea;
+  --color-text-primary: var(--color-black);
+  --color-text-secondary: #6b7280;
+  --color-confirmation-tint: #e8effd;
+  --color-star-gold: #ffd700;
+
+  /* Listing grid cards (Jiji-style) */
+  --color-price-green: #1a9d4b;
+  --color-verified-green: #1a9d4b;
+  --color-chip-bg: #f0f1f4;
+  --color-chip-text: #4b5563;
+
+  /* Glassmorphism surfaces — used sparingly, on headers/overlay panels only */
+  --glass-blur: 18px;
+  --glass-bg-light: rgba(255, 255, 255, 0.55);
+  --glass-border-light: rgba(255, 255, 255, 0.45);
+  --glass-bg-dark: rgba(11, 30, 61, 0.55);
+  --glass-border-dark: rgba(255, 255, 255, 0.18);
+
+  /* Heavy-weight outline accent (feed card + image controls) */
+  --outline-weight: 3px;
+  --outline-weight-sm: 2px;
+
+  /* Typography */
+  --font-family: "Inter", system-ui, sans-serif;
+  --font-size-heading: 20px;
+  --font-size-body: 14px;
+  --font-size-label: 12px;
+
+  /* Radii */
+  --radius-control: 14px;
+  --radius-card: 16px;
+  --radius-sheet: 28px;
+  --radius-full: 999px;
+
+  /* Spacing (8pt scale) */
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 20px;
+  --space-5: 24px;
+
+  --screen-padding: 20px;
+  --content-max-width: 640px;
+  --page-max-width: 1100px;
+  --header-max-width: 1400px;
+}

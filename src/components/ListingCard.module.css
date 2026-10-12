@@ -1,0 +1,148 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.card:hover,
+.card:focus-visible {
+  box-shadow: 0 6px 20px rgba(17, 17, 17, 0.1);
+  transform: translateY(-2px);
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--color-border);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.verifiedBadge {
+  position: absolute;
+  top: var(--space-1);
+  left: var(--space-1);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-verified-green);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.ratingBadge {
+  position: absolute;
+  top: var(--space-1);
+  right: var(--space-1);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ratingIcon {
+  color: var(--color-star-gold);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+}
+
+.description {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.locationRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.locationIcon {
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: var(--radius-control);
+  background: var(--color-chip-bg);
+  color: var(--color-chip-text);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-price-green);
+}
+
+.checkoutButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  border-radius: var(--radius-control);
+  background: var(--color-price-green);
+  color: var(--color-surface);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px var(--space-2);
+  cursor: pointer;
+}
+
+.checkoutButton:active {
+  filter: brightness(0.92);
+}
+
+.checkoutIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}

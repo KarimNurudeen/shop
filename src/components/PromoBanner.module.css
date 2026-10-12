@@ -1,0 +1,37 @@
+.wrapper {
+  background: var(--color-dark-blue);
+  border-radius: var(--radius-card);
+  border: var(--outline-weight) solid var(--color-surface);
+  padding: var(--space-2) var(--space-3);
+  color: var(--color-surface);
+  touch-action: none;
+  cursor: grab;
+  transition: transform 350ms ease, opacity 350ms ease;
+}
+
+.hidden {
+  transform: translateY(-130%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dragging {
+  transition: none;
+  cursor: grabbing;
+}
+
+.title {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: var(--font-size-label);
+  opacity: 0.85;
+}

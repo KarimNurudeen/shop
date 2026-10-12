@@ -1,0 +1,47 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 1px;
+}
+
+.starFilled,
+.starEmpty {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+.starFilled {
+  color: var(--color-star-gold);
+}
+
+.starEmpty {
+  color: var(--color-border);
+}
+
+.ratingValue {
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.reviewCount {
+  font-size: var(--font-size-label);
+  color: var(--color-text-secondary);
+}
+
+.ratingValueLight {
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  color: var(--color-surface);
+}
+
+.reviewCountLight {
+  font-size: var(--font-size-label);
+  color: rgba(255, 255, 255, 0.75);
+}

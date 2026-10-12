@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-surface);
+  border: var(--outline-weight-sm) solid var(--color-black);
+  border-radius: var(--radius-control);
+  padding: 6px 8px;
+  min-width: 0;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--color-text-primary);
+  background: transparent;
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}

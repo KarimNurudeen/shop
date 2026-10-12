@@ -1,0 +1,13 @@
+.select {
+  flex-shrink: 0;
+  border: var(--outline-weight-sm) solid var(--color-black);
+  border-radius: var(--radius-control);
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  cursor: pointer;
+  max-width: 120px;
+}

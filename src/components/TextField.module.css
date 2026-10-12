@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.required {
+  color: var(--color-accent-red);
+}
+
+.input {
+  border: var(--outline-weight-sm) solid var(--color-black);
+  border-radius: var(--radius-control);
+  padding: 12px var(--space-2);
+  font-size: var(--font-size-body);
+  font-family: inherit;
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-primary-blue);
+}

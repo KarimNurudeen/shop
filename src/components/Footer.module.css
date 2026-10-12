@@ -1,0 +1,52 @@
+.footer {
+  background: var(--color-dark-blue);
+  border-top: var(--outline-weight) solid var(--color-surface);
+  padding: var(--space-5) var(--screen-padding);
+}
+
+.inner {
+  max-width: var(--header-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  text-align: center;
+}
+
+.brand {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: var(--color-surface);
+}
+
+.tagline {
+  font-size: var(--font-size-body);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.whatsappBadge {
+  margin-top: var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  border: var(--outline-weight-sm) solid var(--color-accent-red);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  color: var(--color-surface);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.whatsappIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.copyright {
+  margin-top: var(--space-3);
+  font-size: var(--font-size-label);
+  color: rgba(255, 255, 255, 0.55);
+}

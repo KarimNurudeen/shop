@@ -1,0 +1,19 @@
+.inStock,
+.outOfStock {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  border: var(--outline-weight-sm) solid var(--color-black);
+}
+
+.inStock {
+  background: var(--color-confirmation-tint);
+  color: var(--color-primary-blue);
+}
+
+.outOfStock {
+  background: #fbeaec;
+  color: var(--color-accent-red);
+}
